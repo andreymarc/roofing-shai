@@ -275,8 +275,8 @@ main {
 
 /* Footer */
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #fff;
+  color: #333;
   padding: 3rem 5%;
 }
 
@@ -289,22 +289,38 @@ footer {
   margin: 0 auto;
 }
 
+.footer-iframe {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.footer-iframe iframe {
+  width: 100%;
+  border: none;
+}
+
 .footer-logo {
   flex: 1;
   min-width: 200px;
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
 }
 
 .footer-logo img {
-  height: 40px;
+  height: 60px;
   width: auto;
+  margin-left: 45px;
 }
 
 .footer-links {
-  flex: 2;
+  flex: 1;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   list-style: none;
   margin-bottom: 1rem;
 }
@@ -314,7 +330,7 @@ footer {
 }
 
 .footer-links a {
-  color: #fff;
+  color: #333;
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.3s ease;
@@ -323,16 +339,29 @@ footer {
 .footer-links a:hover {
   color: #3498db;
 }
-.footer-iframe {
-  width: 100%;
-  max-width: 1200px;
-  margin: 2rem auto;
-  overflow: hidden;
+
+.footer-contact {
+  flex: 1;
+  min-width: 200px;
 }
 
-.footer-iframe iframe {
-  width: 100%;
-  border: none;
+.footer-contact h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-contact p {
+  margin-bottom: 0.5rem;
+}
+
+.footer-contact a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: #3498db;
 }
 
 .footer-bottom {
@@ -340,7 +369,7 @@ footer {
   text-align: center;
   margin-top: 2rem;
   padding-top: 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 0.8rem;
 }
 
@@ -351,7 +380,7 @@ footer {
 }
 
 .social-links a {
-  color: #fff;
+  color: #333;
   font-size: 1.2rem;
   margin: 0 0.5rem;
   transition: color 0.3s ease;
@@ -366,7 +395,7 @@ footer {
   /* Header and navigation */
   nav {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .logo {

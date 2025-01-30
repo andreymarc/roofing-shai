@@ -72,6 +72,40 @@ nav {
   background-color: #2980b9;
 }
 
+/* Mobile menu toggle */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mobile-menu-toggle span {
+  width: 30px;
+  height: 3px;
+  background: #333;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: center;
+}
+
+.mobile-menu-toggle.active {
+  transform: rotate(90deg);
+}
+
+.mobile-menu-toggle.active span {
+  /* Ensure spans don't change when active */
+  transform: none;
+}
+
 /* Adjust main content to account for fixed header */
 main {
   padding-top: 80px; /* Adjust this value based on your header height */
@@ -317,9 +351,6 @@ footer {
 }
 
 /* Responsive design */
-/* ... (previous styles remain unchanged) ... */
-
-/* Responsive design */
 @media (max-width: 768px) {
   /* Header and navigation */
   nav {
@@ -357,9 +388,10 @@ footer {
 
   /* Mobile menu toggle */
   .mobile-menu-toggle {
-    display: block;
-    font-size: 1.5rem;
-    cursor: pointer;
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
   }
 
   /* Hero section */
@@ -426,7 +458,7 @@ footer {
     font-size: 1rem;
   }
 
-  /* CTA Button */
+ /* CTA Button */
   .cta-button {
     padding: 0.6rem 1.5rem;
     font-size: 0.9rem;
@@ -446,48 +478,6 @@ footer {
 
   .footer-links li {
     margin: 0.3rem 0;
-  }
-}
-
-/* Adjust for fixed header */
-section {
-  padding-top: 80px;
-  margin-top: -80px;
-}
-
-/* Mobile menu toggle styles */
-.mobile-menu-toggle {
-  display: none; /* Hide by default on desktop */
-}
-
-@media (max-width: 768px) {
-  .mobile-menu-toggle {
-    display: block;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    z-index: 1001;
-  }
-
-  .mobile-menu-toggle span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 5px 0;
-    transition: all 0.3s ease;
-  }
-
-  .mobile-menu-toggle.active span:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-
-  .mobile-menu-toggle.active span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .mobile-menu-toggle.active span:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
   }
 }
 

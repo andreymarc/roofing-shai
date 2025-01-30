@@ -332,22 +332,27 @@ footer {
   }
 
   .nav-links {
+    display: none;
     flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
     width: 100%;
-    display: none; /* Hide by default on mobile */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
   .nav-links.active {
-    display: flex; /* Show when active */
+    display: flex;
   }
 
   .nav-links li {
-    margin: 0.5rem 0;
+    margin: 10px 0;
   }
 
   .nav-links .cta-button {
-    display: inline-block;
-    margin-top: 0.5rem;
+    margin-top: 10px;
   }
 
   /* Mobile menu toggle */

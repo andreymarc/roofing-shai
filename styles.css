@@ -253,20 +253,24 @@ main {
 
 .cta p {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .cta-iframe {
   width: 100%;
-  max-width: 1200px;
+  max-width: 600px;
   margin: 0 auto;
-  height: 800px;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .cta-iframe iframe {
   width: 100%;
   height: 100%;
   border: none;
+  display: block;
 }
 
 /* Responsive adjustments */
@@ -284,22 +288,8 @@ main {
   }
 }
 
-/* CTA Button */
-.cta-button {
-  display: inline-block;
-  background-color: #fff;
-  color: #3498db;
-  padding: 0.8rem 2rem;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: 600;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
 
-.cta-button:hover {
-  background-color: #2980b9;
-  color: #fff;
-}
+
 
 /* Footer */
 footer {
@@ -513,10 +503,10 @@ footer {
     margin: 1rem 0;
   }
 
-  /* CTA section */
+  /* CTA section
   .cta h2 {
     font-size: 2rem;
-  }
+  } */
 
   .cta p {
     font-size: 1rem;

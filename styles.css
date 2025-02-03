@@ -256,6 +256,30 @@ main {
   margin-bottom: 1rem;
 }
 
+.cta-button {
+  display: inline-block;
+  background-color: #fff;
+  color: #3498db;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #2980b9;
+  color: #fff;
+}
+
+/* Responsive adjustments for the CTA button */
+@media (max-width: 768px) {
+  .cta-button {
+    padding: 0.7rem 1.8rem;
+    font-size: 1rem;
+  }
+}
+
 .cta-iframe {
   width: 100%;
   max-width: 600px;

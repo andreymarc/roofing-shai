@@ -631,3 +631,7 @@ section {
   margin-top: -80px;
 }
 
+.section-spacer {
+  height: 60px; /* Adjust this value to increase or decrease the space */
+}
+

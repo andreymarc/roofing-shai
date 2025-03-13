@@ -478,7 +478,7 @@ footer {
   }
 
    footer {
-    padding-bottom: 375px; /* Ensure space for iframe on mobile */
+    padding-bottom: 20px; /* Ensure space for iframe on mobile */
   }
 
   .logo {

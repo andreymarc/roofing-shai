@@ -55,7 +55,7 @@ nav {
 }
 
 .logo img {
-  height: 50px;
+  height: 40px;
   width: auto;
 }
 
@@ -399,6 +399,7 @@ footer {
 
   .logo {
     order: 2;
+    margin-top: 5px;
   }
 
   .nav-links {

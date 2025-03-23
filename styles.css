@@ -302,9 +302,11 @@ nav {
 }
 
 .cta-iframe {
-  max-width: 600px;
+  max-width: 800px;
+  width:100%;
   margin: 0 auto;
-  height: 400px;
+  height: 600px;
+  overflow: hidden;
 }
 
 .cta-iframe iframe {

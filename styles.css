@@ -251,11 +251,17 @@ nav {
   background-color: #fff;
 }
 
+.process h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
 .process-steps {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
 
 .step {
   text-align: center;

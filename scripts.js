@@ -95,11 +95,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('form');
     if (form) {
         form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            if (validateForm()) {
-                // If form is valid, you can submit it here
-                alert('Form submitted successfully!');
-                form.reset();
+            if (!validateForm()) {
+                e.preventDefault();
+                alert('Please fill out all required fields.');                
+                
             }
         });
     }

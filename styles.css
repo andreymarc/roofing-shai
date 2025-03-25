@@ -324,7 +324,7 @@ form {
   margin: 0 auto;
 }
 
-form div {
+.form-group {
   margin-bottom: 1rem;
 }
 
@@ -337,9 +337,7 @@ form label {
 
 form input[type="text"],
 form input[type="email"],
-form input[type="tel"],
-form textarea,
-form select {
+form input[type="tel"] {
   width: 100%;
   padding: 0.75rem;
   border: 1px solid #ddd;
@@ -350,16 +348,9 @@ form select {
 
 form input[type="text"]:focus,
 form input[type="email"]:focus,
-form input[type="tel"]:focus,
-form textarea:focus,
-form select:focus {
+form input[type="tel"]:focus {
   border-color: #e74c3c;
   outline: none;
-}
-
-form textarea {
-  resize: vertical;
-  min-height: 100px;
 }
 
 form button[type="submit"] {
@@ -376,14 +367,6 @@ form button[type="submit"] {
 
 form button[type="submit"]:hover {
   background-color: #c0392b;
-}
-
-form .error {
-  border-color: #e74c3c;
-}
-
-form .error:focus { 
-  border-color: #e74c3c;
 }
 
 /* Footer */
